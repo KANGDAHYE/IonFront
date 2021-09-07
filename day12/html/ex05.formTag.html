@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../MainCss/rest.css">
+    <link rel="stylesheet" href="../css/sub0907.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- get방식 전송 : 글자수에 제한 있음(255자), 보안에 취약하다 -->
+    <!-- 전송 눌렀을때 결과 : ?name=강다혜&pw=1234 -->
+    <h3>GET방식</h3>
+    <form action="" method="GET">
+        이름 : <input type="text" name="name" id="name"><br>
+        비번 : <input type="password" name="pw" id="pw"><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+    <hr>
+    <!-- post방식 전송 : 글자수에 제한 없음, 약한 보안적이다 -->
+    <!-- 전송 눌렀을때 결과 : ?name=강다혜&pw=1234 -->
+    <h3>POST방식</h3>
+    <form action="" method="POST">
+        이름 : <input type="text" name="name" id="name"><br>
+        비번 : <input type="password" name="pw" id="pw"><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+</body>
+
+</html>

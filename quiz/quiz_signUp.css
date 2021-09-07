@@ -1,0 +1,20 @@
+.signUp h1{
+    margin-left: 160px;
+}
+form{
+    /* border: 2px solid palevioletred; */
+    margin: 5px;
+}
+table{
+    margin: 5px;
+}
+td{
+    height: 40px;
+    border: 2px solid palevioletred;
+}
+span{
+    color: red;
+}
+.btn{
+    margin-left: 200px;
+}

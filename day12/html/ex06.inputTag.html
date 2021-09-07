@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../MainCss/rest.css">
+    <link rel="stylesheet" href="../css/sub0907.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- checkbox : 다중선택 가능 -->
+    <!-- submit은 form 안에 있는 내용을 받아서 action url로 보낸다.  -->
+    <!-- action="result.jsp" -->
+    <!--결과 :  ?name=ohola&pw=12&hobby=chk1&hobby=chk2&gender=F&txt=자기소개하기-->
+    <form action="" method="POST">
+        이름 : 
+        <label for="name">이름 : </label>
+        <input type="text" name="name" id="name" placeholder="이름입력해줘:)" required><br>
+        <label for="password"></label>
+        비번 : <input type="password" name="pw" id="pw"><br>
+        이메일 : <input type="email" name="email" id="email" placeholder="ddddd@naver.com" required><br>
+        범위 : <input type="range" name="range" id="range" min="0" max="100" value="50"><span>50</span>%<br>
+        숫자 범위 : <input type="number" name="rangeN" id="rangeN" min="-1000" max="1000"><br>
+        검색 : <input type="search" placeholder="검색어를 쓰세요"><br>
+        TEL : <input type="tel" placeholder="전화번호를 쓰세요"><br>
+        시간 : <input type="time" ><br>
+        date : <input type="date"><br>
+        datetime : <input type="datetime"><br>
+        datetime-local : <input type="datetime-local"><br>
+        파일 : <input type="file" name="file" id="file"><br>
+        hidden: <input type="hidden" name="file" id="file"><br>
+        이미지: <input type="image" src="../../day10/imgs/sinZzang1.jpeg" name="file" id="file"><br>
+        색상 : <input type="color" value=""><br>
+        week : <input type="week" value=""><br>
+        취미 : 
+            <input type="checkbox" name="hobby" value="chk1" checked> 독서
+            <input type="checkbox" name="hobby" value="chk2"> 게임 
+            <input type="checkbox" name="hobby" value="chk3"> 음악감상 
+            <input type="checkbox" name="hobby" value="chk4"> 등산 <br> 
+        성별 : <input type="radio" name="gender" value="F" checked>여자
+              <input type="radio" name="gender" value="M">남자<br>
+        직업 : 
+            <Select name="optN" id="optI">//size="5" , multiple : ctrl 누르고 여러개 누를 수 있음
+                <option value="opt1">선택하세요</option>
+                <option value="opt2">회사원</option>
+                <option value="opt3">주부</option>
+                <option value="opt4">의사</option>
+                <option value="opt5">경찰</option>
+            </Select>
+            <br>
+            <textarea name="txt" id="" cols="30" rows="10">자기소개하기</textarea>
+
+            <br><br>
+        <input type="submit" value="전송">
+        <input type="reset" value="취소">
+    </form>
+    <hr>
+
+</body>
+
+</html>
