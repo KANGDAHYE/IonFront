@@ -10,11 +10,11 @@
     background-color: royalblue;
 }
 
-.box:focus{
+/* .box:focus{
     width: 200px;
     height: 200px;
     background-color: burlywood;
-}
+} */
 
 input:focus{
     background-color: yellow;
@@ -52,3 +52,4 @@ th, tr, td{
     display: none;
     text-decoration: none;
 }
+
