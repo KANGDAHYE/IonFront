@@ -1,0 +1,21 @@
+.box{
+    text-align: center;
+    width: 500px;
+}
+.title{
+    border: 2px solid pink;
+}
+td{
+    border: 2px solid pink;
+    width: 60px;
+}
+.seat{
+    display: flex;
+    /* margin-left: 80px; */
+}
+.left{
+    margin-right: 40px;
+}
+.oh{
+    background-color: paleturquoise;
+}

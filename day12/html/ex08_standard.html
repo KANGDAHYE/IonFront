@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../MainCss/rest.css">
+    <link rel="stylesheet" href="../css/sub0907.css">
+    <title>웹표준을 지킨것</title>
+
+    <style>
+        .accent{
+            font-size: 20px;
+            font-weight: bold;
+            color: rebeccapurple;
+        }
+        body, div{
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        div#blue{color : blue;}
+        table{width: 400px;}
+        td{
+            border-collapse: collapse;
+            border: 1px solid pink;
+            padding: 5px;
+            text-align: 5px;
+            font-size: 15pt;
+            font-family: tahoma, 굴림, 돋움, 궁서, Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .myphoto{
+            position: absolute; 
+            left: 500px;
+            top: 30px;
+            transform: rotate(15deg);
+        }
+
+        form{
+            margin: 20px 30px 40px;
+            margin-left: 100px;
+        }
+
+        ul li{
+            color: black;
+            float: left;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+    <p id="header">
+        이제 <span class="accent">웹표준</span>의 역할은 
+        아주 <span class="accent">중요</span>합니다.
+    </p>
+
+    <table>
+        <tr>
+            <td>가</td>
+            <td>가</td>
+        </tr>
+        <tr>
+            <td>나</td>
+            <td>가</td>
+        </tr>
+        <tr>
+            <td>다</td>
+            <td>가</td>
+        </tr>
+        <tr>
+            <td>라</td>
+            <td>가</td>
+        </tr>
+    </table>
+
+
+    <p>
+        이제 <div id="blue">웹표준</div>의 역할은 
+        아주 <div id="blue">중요</div>합니다.
+    </p>
+
+    <hr>
+    <img class="myphoto" src="../imgs/hero2.png" alt="">
+
+    <hr>
+    <form action="" method="GET">
+        <meter value="10", max="100"></meter>10%
+    </form>
+
+    <ul>
+        <li>로딩</li>
+        <li>중</li>
+        <li> 입니다.</li>
+        <li>기다려</li>
+    </ul>
+    <ul>
+        <li>
+            <label for="">주세요.</label>
+            <progress value="70" max="100"></progress>
+        </li>
+    </ul>
+</body>
+
+</html>
