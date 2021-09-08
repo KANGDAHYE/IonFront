@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onload event</title>
+    <script>
+        // window.onload = function(){
+            // alert("innerHTML : " + document.body.innerHTML + '₩n'
+            //     +"innerText : " +document.body.innerText)
+        //     let list = '';
+        //     list += "<ul>";
+        //     list += "<li>Hello</li>";
+        //     list += "<li>nice</li>";
+        //     list += "<li>perfact</li>";
+        //     list += "<li>wow</li>";
+        //     list += "</ul>";
+
+        //     document.body.innerHTML = list;
+        //     alert(list);
+        // }
+        function countIncrease(){
+            let spanObj = document.querySelector('#countSpan');
+            spanObj.innerHTML = parseInt(spanObj.innerHTML)+1;
+        }
+
+        document.querySelector('#id');
+        document.querySelector('.className');
+        document.querySelectorAll('.className');
+
+        document.getElementById('id');
+        document.getElementsByClassName('className');
+        document.getElementsByName('name');//name = "pwd"
+        document.getElementsByTagName('body');
+
+        // document.getElementsByClassName('className')[0].innerHTML = '가나다라';
+
+        function clickNumber(data){
+            let monitor = document.getElementById("monitor");
+            // alert(data);
+            if(data === 'clear'){
+                monitor.value = '';
+            }else if(data !== '='){
+                monitor.value += data;
+            }else{
+                monitor.value = eval(monitor.value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="monitor"><br>
+    <input type="button" value="1" onclick="clickNumber(this.value)">
+    <input type="button" value="2" onclick="clickNumber(this.value)">
+    <input type="button" value="3" onclick="clickNumber(this.value)">
+    <input type="button" value="+" onclick="clickNumber(this.value)">
+    <input type="button" value="-" onclick="clickNumber(this.value)">
+    <input type="button" value="=" onclick="clickNumber(this.value)">
+    <input type="button" value="clear" onclick="clickNumber(this.value)">
+    <hr>
+    good <br/>
+    <h3>축하축하:)</h3>
+
+    <span id="countSpan">0</span> 번 클릭 &nbsp;&nbsp;&nbsp;
+    <input type="button" value="클릭" onclick="countIncrease()">
+    <input type="text" name="pwd" />
+    <hr>
+    <div class="sample"></div>
+    <div class="sample"></div>
+    <div class="sample"></div>
+    <div class="sample"></div>
+    <div class="sample"></div>
+</body>
+</html>
